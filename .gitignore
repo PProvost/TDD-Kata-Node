@@ -1,0 +1,10 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Build directory
+build/
+
+# Dependencies
+typings/
+node_modules/
