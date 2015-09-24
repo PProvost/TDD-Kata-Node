@@ -39,7 +39,10 @@ gulp.task('build-all', ['build-src', 'build-test']);
 
 gulp.task('run-tests', ['build-test', 'build-src'], function() {
 	return gulp.src('build/test/*.test.js', {read:false})
-		.pipe(mocha({reporter: 'spec'}));
+		.pipe(mocha({
+			reporter: 'spec',
+			ui: 'bdd'
+		}));
 });
 
 // Dependencies
